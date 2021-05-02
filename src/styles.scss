@@ -1,0 +1,234 @@
+/* You can add global styles to this file, and also import other style files */
+// common CSS start
+$red: #EA4335;
+$white: #fff;
+$blue: #4285F4;
+$gridgrey:#C8C8C8;
+$green:#34A853;
+$yellow:#F4B400;
+$grey:#f2f2f2;
+$fontColor:#656565;
+$font:arial;
+$fontSize:14px;
+$relative:relative;
+$absolute:absolute;
+$sticky:sticky;
+
+
+
+// common CSS End
+body{
+    font-family: $font;
+    font-size: $fontSize;
+    color: $fontColor;
+}
+.action_button{
+    background: $red !important;
+    color:$white!important;
+    border:0 !important;
+    outline:0 !important;
+}
+.header{
+    padding:10px 0;
+    position: $relative;
+    .logo{
+        font-size: 32px;
+        font-weight: bold;
+        position: $absolute;
+        left:50%;
+        transform:translateX(-50%);
+        top:5px;
+        margin:auto;
+        display: inline-block !important;
+        color:$red;
+    }
+}
+.form-select{
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+   // background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.menuBar{
+    background: $red;
+    .navbar{
+        width:100%;
+        color:$white;
+    }
+}
+
+.dropdown-toggle{
+    svg{
+        width:26px;
+        height:26px;
+    }
+    &:after{
+        display: none !important;
+    }
+}
+.breadcrumb{
+    background: transparent;
+    margin-bottom: 0;
+    svg{
+        position: relative;
+        top:-2px;
+        width:20px;
+        height:20px;
+    }
+}
+.displayBoxes{
+    div{
+        border:1px solid $blue;
+        border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+        padding:15px 0;
+        h3{
+            font-size: 13px;
+            font-weight: normal;
+        }
+    }
+    .blueBox{
+        border-color: $blue;
+        color:$blue;
+    }
+    .greenBox{
+        border-color: $green;
+        color:$green
+    }
+    .yellowBox{
+        border-color: $yellow;
+        color:$yellow;
+    }
+    .redBox{
+        border-color: $red;
+        color:$red;
+    }
+}
+.searchWrapper{
+    width:100%;
+    .searchBox{
+        border:1px solid $gridgrey;
+        padding:15px 0;
+
+        label{
+            line-height: 38px;
+            margin-bottom: 0 !important;
+        }
+        .form-control{
+            display: inline-block !important;
+            width:70%;
+            font-size: $fontSize;
+        }
+    }
+    
+}
+.clickButton{
+    width:100%;
+    text-align: center;
+    height:50px;
+    line-height:50px;
+    background: $grey;
+    font-size: 18px;
+    display: block;
+}
+.btn-outline-blue{
+    border:1px solid $blue;
+    color:$blue;
+    width:100%;
+    &:hover{
+        background: $blue;
+        color:$white;
+        svg{
+            fill:$white;
+        }
+    }
+}
+.btn-outline-green{
+    border:1px solid $green;
+    color:$green;
+    width:100%;
+    &:hover{
+        background: $green;
+        color:$white;
+        svg{
+            fill:$white;
+        }
+    }
+}
+.btn-outline-red{
+    border:1px solid $red;
+    color:$red;
+    width:100%;
+    &:hover{
+        background: $red;
+        color:$white;
+        svg{
+            fill:$white;
+        }
+    }
+}
+.label-midle{
+    height:38px;
+    line-height: 38px;
+}
+.tablewrapr{
+    .table{
+        border:1px solid $gridgrey;
+        tr{
+            td{
+                vertical-align: middle;
+                .noBg{
+                    border:0;
+                    outline:0;
+                    background: transparent;
+
+                    svg{
+                        fill:$red;
+                    }
+                }
+            }
+        }
+    }
+}
+.pagination{
+    .page-item{
+        &.active{
+            .page-link{
+                background: $red;
+                color:$white;
+                border-color:$red;
+            }
+        }
+        .page-link{
+            color:$red;
+        }
+    }
+}
+.moveTop{
+    svg{
+        width:24px;
+        height:24px;
+    } 
+}
+
+.dropdown-toggle{
+    &.active + .dropdown-menu{
+        display: block;
+        right:0;
+        left:auto;
+    }
+}
